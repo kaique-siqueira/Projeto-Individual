@@ -65,6 +65,15 @@ display: flex;
 }
 
 .bannerII {
+    background: hsla(1, 33%, 30%, 1);
+
+background: linear-gradient(180deg, hsla(1, 33%, 30%, 1) 0%, hsla(1, 36%, 53%, 1) 50%, hsla(1, 59%, 25%, 1) 100%);
+
+background: -moz-linear-gradient(180deg, hsla(1, 33%, 30%, 1) 0%, hsla(1, 36%, 53%, 1) 50%, hsla(1, 59%, 25%, 1) 100%);
+
+background: -webkit-linear-gradient(180deg, hsla(1, 33%, 30%, 1) 0%, hsla(1, 36%, 53%, 1) 50%, hsla(1, 59%, 25%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#653433", endColorstr="#B35D5C", GradientType=1 );
     width: 100%;
     height: 460px;
     display: flex;
@@ -126,6 +135,7 @@ p {
     border-radius: 10px;
     background-color: #b99982;
     border: none;
+    cursor: pointer;
 }
 
 /* FIM DO BANNER */
@@ -136,4 +146,178 @@ p {
     width: 100%;
     height: 75px;
     background-color: #be9f88;
+}
+
+
+
+
+/* MELHOR ALBUM */
+
+.container_MA {
+    height: 580px;
+    width: 100%;
+    background-image: url(../Projeto-Individual/capas/taylor_front.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+.blocoI {
+    width: 290px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    background-color: #a8231c86;
+}
+
+.playI {
+    margin-left: 19px;
+}
+
+.blocoII {
+    width: 290px;
+    height: 350px;
+    background-color: #a8231c86;
+}
+
+.blocoIII {
+    width: 290px;
+    height: 350px;
+    background-color: #a8231c86;
+}
+
+.blocoIV {
+    width: 290px;
+    height: 350px;
+    background-color: #a8231c86;
+}
+
+.imgI {
+    height: 150px;
+    position: center;
+    margin-left: 50px;
+}
+
+.p_red {
+    color: white;
+    text-align: center;
+    font-size: large;
+}
+
+.imgII {
+    height: 150px;
+    width: 150px;
+    position: center;
+    margin-left: 50px;
+}
+
+.imgIII {
+    height: 150px;
+    width: 150px;
+    position: center;
+    margin-left: 50px;
+}
+
+.imgIV {
+    height: 150px;
+    width: 150px;
+    position: center;
+    margin-left: 50px;
+}
+
+.button_ma {
+    font-family: 'IM Fell DW Pica', serif;
+    font-size: 18px;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    color: white;
+    background-color: #b99982;
+    border: none;
+    cursor: pointer;
+    margin-left: 70px;
+    margin-top: 16px;
+}
+
+#green {
+    margin-left: 30px;
+}
+
+#red {
+    margin-left: 30px;
+}
+
+.tit_ma {
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    height: auto;
+}
+
+.p_ma {
+    margin-top: 17px;
+}
+
+.blocos {
+    margin-top: -10px;
+    height: 470px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* MELHOR MÚSICA */
+
+.container_MM {
+    height: 580px;
+    width: 100%;
+    background-image: url(../Projeto-Individual/capas/taylor_smile\(1\).jpg);
+    background-size: cover;
+    background-position:top
+}
+
+.p_mm {
+    margin-top: 17px;
+    color: white;
+}
+
+.p_msc {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.player{
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.squareI {
+    align-items: center;
+    width: 300px;
+    height: 350px;
+    justify-content: center;
+    background-color: #a8231c86;
+}
+
+.squareII {
+    width: 250px;
+    height: 350px;
+    justify-content: center;
+    background-color: #a8231c86;
+}
+
+.button_mm {
+    font-family: 'IM Fell DW Pica', serif;
+    font-size: 18px;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    color: white;
+    background-color: #b99982;
+    border: none;
+    cursor: pointer;
+    margin-left: 74px;
+    margin-top: 72px;
 }
