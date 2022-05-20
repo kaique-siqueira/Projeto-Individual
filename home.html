@@ -24,9 +24,10 @@
         <div class="containerII">
 
             <ul class="navbar">
-               <i><li>Login</li></i> &nbsp; <span class="bar">|</span>
-               <i><li>Cadastro</li></i>
+                <a href="javascript: abrir();"><i><li style="color: white;">Login</li></i></a> &nbsp; <span class="bar">|</span>
+                <a href="javascript: abrirII();"><i><li style="color: white;">Cadastro</li></i>
             </ul>
+            
 
         </div>
         
@@ -38,6 +39,39 @@
     <div class="banner"></div>
 
     <div class="bannerII">
+
+        <div class="popup" id="popup">
+            <a href="javascript: fechar();"><div class="x">X</div></a>
+
+            <p class="p_login">Bem vindo ao TS Collection!</p>
+
+
+            <p class="p_email">Email</p>  
+            <input type="email" class="email" placeholder="Email">
+
+            <p class="p_senha">Senha</p>  
+            <input type="password" class="senha" placeholder="Senha">
+            
+            <button class="btn_login">Entrar</button>
+        </div>
+
+
+        <div class="popupII" id="popupII">
+            <a href="javascript: fecharII();"><div class="x">X</div></a>
+
+            <p class="p_cad">Faça parte do TS Collection!</p>
+
+
+            <p class="p_email">Email</p>  
+            <input type="email" class="email" placeholder="Email">
+
+            <p class="p_senha">Senha</p>  
+            <input type="password" class="senha" placeholder="Senha">
+            
+            <button class="btn_login">Entrar</button>
+        </div>
+
+        
 
         <div class="cardI">
             <i><p class="p_cards">MELHOR ALBUM</p></i>
@@ -74,3 +108,18 @@
     <div class="footer"></div>
 </body>
 </html>
+
+<script type="text/javascript">
+    function abrir(){
+        document.getElementById('popup').style.display = 'block';
+    }
+    function abrirII(){
+        document.getElementById('popupII').style.display = 'block';
+    }
+    function fechar(){
+		document.getElementById('popup').style.display =  'none';
+			}
+    function fecharII(){
+		document.getElementById('popupII').style.display =  'none';
+			}
+</script>

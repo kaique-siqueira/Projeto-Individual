@@ -62,6 +62,86 @@ display: flex;
     background-image: url(Taylor-Inicio.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+
+.x {
+    font-family: 'IM Fell DW Pica', serif;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 30px;
+    float: right;
+    padding-top: 9px;
+    padding-right: 14px;
+    color: white;
+}
+
+.popup {
+    font-family: 'IM Fell DW Pica', serif;
+    background-color: #9c1c15b2;
+    width: 390px;
+    height: 450px;
+    position: absolute;
+    margin-bottom: 919px;
+    display: none;
+    border-radius: 30px;
+}   
+
+.popupII {
+    font-family: 'IM Fell DW Pica', serif;
+    background-color: #9c1c15b2;
+    width: 390px;
+    height: 450px;
+    position: absolute;
+    margin-bottom: 919px;
+    display: none;
+    border-radius: 30px;
+}
+
+.p_login {
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 50px;
+    font-size:x-large;
+}
+
+.p_email {
+    font-size: x-large;
+    text-align: center;
+    margin-top: 41px;
+}
+
+.p_senha {
+    font-size: x-large;
+    text-align: center;
+    margin-top: 52px;
+}
+
+.senha {
+    font-family: 'IM Fell DW Pica', serif;
+    text-align: center;
+    margin-left: 104px;
+}
+
+.email {
+    font-family: 'IM Fell DW Pica', serif;
+    text-align: center;
+    margin-left: 104px;
+}
+
+.btn_login {
+    font-size: 18px;
+    font-family: 'IM Fell DW Pica', serif;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #b99982;
+    border: none;
+    cursor: pointer;
+    margin-top: 55px;
+    margin-left: 122px;
 }
 
 .bannerII {
@@ -79,6 +159,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#653433", en
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .cardI {
@@ -320,4 +401,12 @@ p {
     cursor: pointer;
     margin-left: 74px;
     margin-top: 72px;
+}
+
+.capa {
+    margin-left: 350px;
+    width: 600px;
+    height: 900px;
+    background-image: url(../Projeto-Individual/capas/taylor_smile.jpg);
+    background-size: cover;
 }
