@@ -145,6 +145,7 @@
     valorI.innerHTML = valor1
     valorII.innerHTML = valor2
     
+    
 
     function validar() {
         
@@ -164,6 +165,10 @@
 
         if (contagem == 3) {
             alert(`Tente novamente em 10 segundos`)
+            setTimeout(()=>{(btn_login.style.display = 'none')},0000);
+            setTimeout(()=>{(btn_login.style.display = 'block')},10000);
+            
+            contagem = 0
         }
 
         
