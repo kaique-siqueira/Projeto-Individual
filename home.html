@@ -25,7 +25,7 @@
 
             <ul class="navbar">
                 <a href="javascript: abrir();"><i><li style="color: white;">Login</li></i></a> &nbsp; <span class="bar">|</span>
-                <a href="javascript: abrirII();"><i><li style="color: white;">Cadastro</li></i>
+               <a href="javascript: abrirII();"><li style="color: white;">Cadastro</li></i></a>
             </ul>
             
 
@@ -50,9 +50,15 @@
             <input type="email" class="email" placeholder="Email">
 
             <p class="p_senha">Senha</p>  
-            <input type="password" class="senha" placeholder="Senha">
+            <input type="password" class="email" placeholder="Senha">
             
-            <button class="btn_login">Entrar</button>
+           <div id="captcha" class="captcha"> <p id="valorI" class="valores">1</p> &nbsp;&nbsp;&nbsp; <p class="valores">+</p> &nbsp;&nbsp;&nbsp; <p id="valorII" class="valores">1</p> &nbsp;&nbsp;&nbsp; <p class="valores">=</p> &nbsp;&nbsp;&nbsp;
+              <input type="number" id="in_resultado" class="in_cap" placeholder="Resposta"></div>
+
+        
+            
+            <button class="btn_login" id="btn_login" onclick="validar()">Entrar</button>            
+
         </div>
 
 
@@ -61,14 +67,19 @@
 
             <p class="p_cad">Faça parte do TS Collection!</p>
 
+            <p class="p_email">Nome</p>  
+            <input type="text" class="email" placeholder="Nome Completo">
 
             <p class="p_email">Email</p>  
             <input type="email" class="email" placeholder="Email">
 
             <p class="p_senha">Senha</p>  
-            <input type="password" class="senha" placeholder="Senha">
+            <input type="password" class="email" placeholder="Senha">
+
+            <p class="p_senha">Confirmar senha</p>  
+            <input type="password" class="email" placeholder="Senha">
             
-            <button class="btn_login">Entrar</button>
+            <button class="btn_login">Cadastrar</button>
         </div>
 
         
@@ -112,9 +123,11 @@
 <script type="text/javascript">
     function abrir(){
         document.getElementById('popup').style.display = 'block';
+        document.getElementById('popupII').style.display =  'none';
     }
     function abrirII(){
         document.getElementById('popupII').style.display = 'block';
+        document.getElementById('popup').style.display =  'none';
     }
     function fechar(){
 		document.getElementById('popup').style.display =  'none';
@@ -122,4 +135,37 @@
     function fecharII(){
 		document.getElementById('popupII').style.display =  'none';
 			}
+</script>
+
+<script>
+    var contagem = 0
+    valor1 = parseInt(Math.random() * 10) +1
+    valor2 = parseInt(Math.random() * 10) +1
+
+    valorI.innerHTML = valor1
+    valorII.innerHTML = valor2
+    
+
+    function validar() {
+        
+        var valor_soma = valor1 + valor2
+        var resposta = Number (in_resultado.value)
+
+
+        if (valor_soma == resposta) {
+            alert(`Resposta correta!`)
+            window.location.href = "login.html"
+        }
+
+        if (valor_soma != resposta) {
+            alert (`Resporta errada!`)
+            contagem++
+        }
+
+        if (contagem == 3) {
+            alert(`Tente novamente em 10 segundos`)
+        }
+
+        
+    }
 </script>

@@ -89,11 +89,38 @@ display: flex;
     border-radius: 30px;
 }   
 
+.captcha {
+    margin-left: 112px;
+    margin-top: 42px;
+    background-color: rgba(255, 255, 255, 0);
+    height: 50px;
+    width: 390px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;   
+}
+
+.in_cap {
+    text-align: center;
+    height: 25px;
+    width: 84px;
+    padding-right: 1px;
+    border: white solid;
+    border-radius: 19px;
+}
+
+.valores {
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 8px;
+}
+
 .popupII {
     font-family: 'IM Fell DW Pica', serif;
     background-color: #9c1c15b2;
     width: 390px;
-    height: 450px;
+    height: 515px;
     position: absolute;
     margin-bottom: 919px;
     display: none;
@@ -107,28 +134,32 @@ display: flex;
     font-size:x-large;
 }
 
+.p_cad{
+    text-align: center;
+    margin-top: 44px;
+    margin-left: 15px;
+    font-size:x-large;
+}
+
 .p_email {
     font-size: x-large;
     text-align: center;
-    margin-top: 41px;
+    margin-top: 27px;
 }
 
 .p_senha {
     font-size: x-large;
     text-align: center;
-    margin-top: 52px;
-}
-
-.senha {
-    font-family: 'IM Fell DW Pica', serif;
-    text-align: center;
-    margin-left: 104px;
+    margin-top: 27px;
 }
 
 .email {
     font-family: 'IM Fell DW Pica', serif;
     text-align: center;
     margin-left: 104px;
+    border: white solid;
+    border-radius: 10px;
+    
 }
 
 .btn_login {
@@ -140,8 +171,9 @@ display: flex;
     background-color: #b99982;
     border: none;
     cursor: pointer;
-    margin-top: 55px;
+    margin-top: 30px;
     margin-left: 122px;
+    text-align: center;
 }
 
 .bannerII {
