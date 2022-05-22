@@ -56,6 +56,28 @@ display: flex;
 
 /* INICIO DO BANNER */
 
+.aviso {
+    position: relative;
+    width: 225px;
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    float: right;
+    margin-top: 45px;
+    margin-right: 142px;
+    display: none;
+    
+}
+
+#p_aviso {
+    color:#a8231c;
+    font-weight: 900;
+    font-size: larger;
+    margin-top: 35px;
+    text-align: center;
+    
+}
+
 .banner {
     width: 100%;
     height: 460px;
@@ -234,6 +256,11 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#653433", en
     justify-content: center;
 }
 
+.playerII {
+    margin-left: 55px;
+    margin-top: 20px;
+}
+
 p {
     margin-bottom: 10px;
     color: white;
@@ -387,7 +414,7 @@ p {
     width: 100%;
     background-image: url(../Projeto-Individual/capas/taylor_smile\(1\).jpg);
     background-size: cover;
-    background-position:top
+    background-position: 40% 9%;
 }
 
 .p_mm {
@@ -435,10 +462,72 @@ p {
     margin-top: 72px;
 }
 
-.capa {
-    margin-left: 350px;
-    width: 600px;
-    height: 900px;
-    background-image: url(../Projeto-Individual/capas/taylor_smile.jpg);
-    background-size: cover;
+/* DASHBOARD */
+
+.coluna {
+    height: 470px;
+    width: 351px;
+    background-color: #a8231c98;
+    margin-left: 100px;
+    border-radius: 82px;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner_dash {
+    display: flex;
+    height: 470px;
+    width: 100%;
+    background-image: url(../Projeto-Individual/capas/red_cover.jpg);
+    background-position: 50% 34%;
+}
+
+
+.options {
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    padding-top: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+    
+}
+
+.optionsII {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn_dash {
+    margin-top: 80px;
+    width: 195px;
+    height: 40px;
+    margin-left: 77px;
+    border-radius: 10px;
+    background-color: #a8231c;
+    border: none;
+    color: white;
+    font-family: 'IM Fell DW Pica', serif;
+    font-size: 20px;
+}
+
+/* GRAFICO */
+
+.chart {
+    display: none;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.404);
+    margin-left: 95px;
+    margin-top: 70px;
+    height: fit-content;
+}
+
+.chartII {
+    display: none;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.404);
+    margin-left: 95px;
+    margin-top: 70px;
+    height: fit-content;
 }

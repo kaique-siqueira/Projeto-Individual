@@ -36,7 +36,9 @@
 
  <!-- FIM DA HEADER -->
 
-    <div class="banner"></div>
+    <div class="banner">
+        <div id="aviso" class="aviso"><p id="p_aviso"></p></div>
+    </div>
 
     <div class="bannerII">
 
@@ -47,10 +49,10 @@
 
 
             <p class="p_email">Email</p>  
-            <input type="email" class="email" placeholder="Email">
+            <input type="email" class="email" placeholder="Email" id="in_email">
 
             <p class="p_senha">Senha</p>  
-            <input type="password" class="email" placeholder="Senha">
+            <input type="password" class="email" placeholder="Senha" id="in_senha">
             
            <div id="captcha" class="captcha"> <p id="valorI" class="valores">1</p> &nbsp;&nbsp;&nbsp; <p class="valores">+</p> &nbsp;&nbsp;&nbsp; <p id="valorII" class="valores">1</p> &nbsp;&nbsp;&nbsp; <p class="valores">=</p> &nbsp;&nbsp;&nbsp;
               <input type="number" id="in_resultado" class="in_cap" placeholder="Resposta"></div>
@@ -68,13 +70,13 @@
             <p class="p_cad">Faça parte do TS Collection!</p>
 
             <p class="p_email">Nome</p>  
-            <input type="text" class="email" placeholder="Nome Completo">
+            <input type="text" class="email" placeholder="Nome Completo" id="in_nome">
 
             <p class="p_email">Email</p>  
-            <input type="email" class="email" placeholder="Email">
+            <input type="email" class="email" placeholder="Email" id="in_emailII">
 
             <p class="p_senha">Senha</p>  
-            <input type="password" class="email" placeholder="Senha">
+            <input type="password" class="email" placeholder="Senha" id="in_senhaII">
 
             <p class="p_senha">Confirmar senha</p>  
             <input type="password" class="email" placeholder="Senha">
@@ -111,7 +113,7 @@
             
         <div class="cardIII">
             <i><p class="p_cards">MÚSCIAS POPULARES</p></i>
-            <i><p class="p_cards_sub">Indicados:</p></i>
+            <iframe class="playerII" style="border-radius:12px" src="https://open.spotify.com/embed/artist/06HL4z0CvFAxyc27GXpf02?utm_source=generator" width="250px" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </div>
 
     </div>
@@ -148,14 +150,17 @@
     
 
     function validar() {
-        
+        p_aviso.innerHTML = ''
         var valor_soma = valor1 + valor2
         var resposta = Number (in_resultado.value)
-
+        var email = in_email.value
+        var senha = Number (in_senha.value)
+        var texto = `Campo de email e senha vazios! <br><br>`
+        var textoII = `Tente novamente em 10 segundos <br><br>`
 
         if (valor_soma == resposta) {
             alert(`Resposta correta!`)
-            window.location.href = "login.html"
+           /* window.location.href = "dashboard.html" */
         }
 
         if (valor_soma != resposta) {
@@ -164,13 +169,21 @@
         }
 
         if (contagem == 3) {
-            alert(`Tente novamente em 10 segundos`)
-            setTimeout(()=>{(btn_login.style.display = 'none')},0000);
+            aviso.style.display = 'block'
+            setTimeout(()=>{(aviso.style.display = 'none')},7000);
+            btn_login.style.display = 'none'
             setTimeout(()=>{(btn_login.style.display = 'block')},10000);
-            
+            p_aviso.innerHTML += textoII
             contagem = 0
+            
         }
 
-        
+        if (email == "" || senha == "") {
+            aviso.style.display = 'block'
+            setTimeout(()=>{(aviso.style.display = 'none')},7000);
+            p_aviso.innerHTML += texto
+        }
+
     }
+
 </script>
