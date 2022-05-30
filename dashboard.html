@@ -43,21 +43,24 @@
             <p class="optionsII">Escolha uma das das opções</p>
 
 
-            <button class="btn_dash" onclick="ma()">Melhor Álbum</button>
+            <button class="btn_dash" onclick="melhor_album()">Melhor Álbum</button>
 
-            <button class="btn_dash" onclick="mm()">Melhor Música</button>
+            <button class="btn_dash" onclick="melhor_musica()">Melhor Música</button>
     </div>
 
     <!-- GRAFICO -->
-    
-    <div class="chart" id="chart_ma">
+
+    <div id="chart_ma">
+    <div class="chart" style="display: block;">
         <canvas  id="myChart" style="height: 310px; width: 721px;"></canvas>
       </div>
+    </div>
 
-      <div class="chartII" id="chart_mm">
+      <div id="chart_mm">
+      <div class="chartII" style="display: none;">
         <canvas  id="myChartII" style="height: 310px; width: 721px;"></canvas>
       </div>
-
+      </div>
 </div>
 
 
@@ -65,6 +68,7 @@
     <div class="footer"></div>
 
 </body>
+</html>
 
 <script>
 
@@ -110,7 +114,7 @@
         label: 'Red TV', 
         backgroundColor: 'rgb(168 35 28)',
         borderColor: 'rgb(168 35 28)',
-        data: [30, 10, 5, 2, 20, 30],
+        data: [50, 10, 5, 2, 20, 30],
       },
       {
         label: 'Fearless', 
@@ -157,16 +161,17 @@
     );
   </script>
 
-  <script>
-      function mm() {
-        document.getElementById('chart_mm').style.display =  'block';
 
-      }
 
-      function ma() {
-        document.getElementById('chart_ma').style.display =  'block';   
-        }
-  </script>
 
-</html>
+<script>
+   function melhor_musica() {
+    chart_mm.style.display = 'block'
+    chart_ma.style.display = 'none'
+   }
 
+   function melhor_album() {
+    chart_mm.style.display = 'none'
+    chart_ma.style.display = 'block'
+   }
+</script>

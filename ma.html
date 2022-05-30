@@ -12,15 +12,15 @@
     <div class="header">
 
         <div class="container">
-            <a href="home.html"><img src="TS-Icon-Red.png" class="img"></a>
+            <a href="home_second.html"><img src="TS-Icon-Red.png" class="img"></a>
 
         </div>
 
         <div class="containerII">
 
-            <ul class="navbar">
-                <a href="login.html"><i><li>Login</li></i></a> &nbsp; <span class="bar">|</span>
-               <i><li>Cadastro</li></i>
+            <ul class="navbarII">
+                <a href="ma.html"><i><li style="color: white;">Melhor Album</li></i></a> &nbsp; 
+              <a href="mm.html"><i><li style="color: white;">Melhor Música</li></i></a> 
             </ul>
 
         </div>
@@ -82,26 +82,27 @@
 </html>
 
 <script>
-    var contagem = 0
+    var redAlbum = 0
+    var fearless = 0
+    var evermore = 0
+    var folklore = 0
     function votar_red() {
        
-       contagem++
-
-       barra.innerHTML = `${contagem}`
+       red++
     }
 
     function votar_fearless() {
-        contagem++ 
-        barra.innerHTML = `${contagem}`
+        fearless++ 
+        
     }
 
     function votar_ever() {
-        contagem++ 
-        barra.innerHTML = `${contagem}`
+        evermore++ 
+        
     }
 
     function votar_folk() {
-        contagem++ 
-        barra.innerHTML = `${contagem}`
+        folklore++ 
+       
     }
 </script>

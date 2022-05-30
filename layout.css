@@ -48,6 +48,14 @@ display: flex;
     margin-top: 30px;
 }
 
+.navbarII {
+    padding: 0%;
+    margin-bottom: 0%;
+    color: white;
+    list-style: none;
+    display: flex;
+}
+
 .img {
     height: 70px;
 }
@@ -142,7 +150,7 @@ display: flex;
     font-family: 'IM Fell DW Pica', serif;
     background-color: #9c1c15b2;
     width: 390px;
-    height: 515px;
+    height: 615px;
     position: absolute;
     margin-bottom: 919px;
     display: none;
@@ -185,6 +193,20 @@ display: flex;
 }
 
 .btn_login {
+    font-size: 18px;
+    font-family: 'IM Fell DW Pica', serif;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #b99982;
+    border: none;
+    cursor: pointer;
+    margin-top: 60px;
+    margin-left: 122px;
+    text-align: center;
+}
+
+.btn_cad {
     font-size: 18px;
     font-family: 'IM Fell DW Pica', serif;
     width: 150px;
@@ -515,7 +537,6 @@ p {
 /* GRAFICO */
 
 .chart {
-    display: none;
     position: relative;
     background-color: rgba(0, 0, 0, 0.404);
     margin-left: 95px;
@@ -524,10 +545,20 @@ p {
 }
 
 .chartII {
-    display: none;
     position: relative;
     background-color: rgba(0, 0, 0, 0.404);
     margin-left: 95px;
     margin-top: 70px;
     height: fit-content;
+}
+
+.pIII{
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    list-style: none;
+}
+
+i{
+    cursor: pointer;
 }

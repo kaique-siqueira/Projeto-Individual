@@ -23,9 +23,9 @@
 
         <div class="containerII">
 
-            <ul class="navbar">
-                <a href="javascript: abrir();"><i><li style="color: white;">Login</li></i></a> &nbsp; <span class="bar">|</span>
-               <a href="javascript: abrirII();"><li style="color: white;">Cadastro</li></i></a>
+            <ul class="navbarII">
+                <a href="ma.html"><i><li style="color: white;">Melhor Album</li></i></a> &nbsp;&nbsp;&nbsp;
+               <a href="mm.html"><li style="color: white;">Melhor Música</li></i></a>
             </ul>
             
 
@@ -54,7 +54,7 @@
             <p class="p_senha">Senha</p>  
             <input type="password" class="email" placeholder="Senha" id="in_senha">
             
-            <button class="btn_login" id="btn_login" onclick="entrar()">Entrar</button>    
+            <button class="btn_login" id="btn_login">Entrar</button>    
             
             
             <p class="pIII">É novo aqui? <i onclick="abrirII()">Faça seu cadastro!</i></p>
@@ -83,7 +83,7 @@
             <div id="captcha" class="captcha"> <p id="valorI" class="valores">1</p> &nbsp;&nbsp;&nbsp; <p class="valores">+</p> &nbsp;&nbsp;&nbsp; <p id="valorII" class="valores">1</p> &nbsp;&nbsp;&nbsp; <p class="valores">=</p> &nbsp;&nbsp;&nbsp;
                 <input type="number" id="in_resultado" class="in_cap" placeholder="Resposta"></div>
 
-            <button class="btn_cad" id="btn_cad" onclick="validar()">Cadastrar</button>
+            <button class="btn_cad" onclick="validar()">Cadastrar</button>
         </div>
 
         
@@ -96,7 +96,7 @@
                 <p>Fearless (Taylor's Version)</p>
                 <p>evermore</p>
                 <p>folklore</p>
-              <button class="button" onclick="abrir()">Vote Agora!</button></a>
+              <a href="ma.html"><button class="button">Vote Agora!</button></a>
             </div>
         </div>
 
@@ -108,7 +108,7 @@
                 <p>Love Story (Taylor's Version)</p>
                 <p>willow</p>
                 <p>cardigan</p>
-               <button class="button" onclick="abrir()">Vote Agora!</button></a>
+                <a href="mm.html"><button class="button">Vote Agora!</button></a>
             </div>
                 
         </div>
@@ -143,7 +143,6 @@
 
 <script>
     var contagem = 0
-
     valor1 = parseInt(Math.random() * 10) +1
     valor2 = parseInt(Math.random() * 10) +1
 
@@ -174,8 +173,8 @@
         if (contagem == 3) {
             aviso.style.display = 'block'
             setTimeout(()=>{(aviso.style.display = 'none')},7000);
-            btn_cad.style.display = 'none'
-            setTimeout(()=>{(btn_cad.style.display = 'block')},10000);
+            btn_login.style.display = 'none'
+            setTimeout(()=>{(btn_login.style.display = 'block')},10000);
             p_aviso.innerHTML += textoII
             contagem = 0
             
@@ -187,10 +186,6 @@
             p_aviso.innerHTML += texto
         }
 
-    }
-
-    function entrar() {
-        window.location.href = "home_second.html"
     }
     
 
